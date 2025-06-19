@@ -90,7 +90,7 @@ def edit(post_id):
     return render_template("edit.html", post=post)
 
 
-@app.route('/delete/<int:post_id>', methods=['POST'])
+@app.route('/delete/<int:post_id>', methods=['GET'])
 def delete(post_id):
     """
     Delete a blog post based on its ID.
@@ -110,4 +110,4 @@ def delete(post_id):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

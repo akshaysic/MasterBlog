@@ -13,7 +13,7 @@
             <strong>{{ post.title }}</strong> by {{ post.author }}<br>
             {{ post.content }}<br>
             <a href="{{ url_for('delete', post_id=post.id) }}">Delete</a>
-            <a href="{{ url_for('update', post_id=post.id) }}">Update</a>
+            <a href="{{ url_for('edit', post_id=post.id) }}">Edit</a>
         </li>
     {% endfor %}
     </ul>
